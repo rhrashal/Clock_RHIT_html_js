@@ -1,0 +1,139 @@
+ <html lang="ru">
+<head>
+	<title>Clock </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+ 
+
+    <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:400;300" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="first_box/style.css" rel="stylesheet"> -->
+	<!-- <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" media="screen" href="first_box/main.css"/>
+ 
+ 
+</head>
+<body>
+
+<div class="container">
+      <div id="top_div">
+
+	<div class="menu">
+		
+		<!-- Иконка меню -->
+		<div class="icon-close">
+			<img src="first_box/close-btn.png">
+		</div>
+		<!-- Меню -->
+		<ul>
+			<li> <A  href="We.html"  target='_blank'>About  us    </A></li>
+			<li> <A  href="books1.html"   target='_blank'>E- books  </A></li> 
+			<li> <A  href="news.html"   target='_blank'>World News</A></li>
+			<li> <A  href="https://translate.google.ru/?hl=ru&amp;tab=TT&amp;sl=en&amp;tl=ru&amp;op=translate" target='_blank'>Translator </A></li> 
+			<li> <A  href="radiationbeltsrus.html"  target='_blank' >The radiation belts rus   </A></li>
+			<li> <A  href="radiationbeltsang.html"  target='_blank' >The radiation belts ang   </A></li>
+			<li> <A  href="ELECT.html"   target='_blank' >Satellite electrification  </A> </li>
+			<li> <A  href="Ionosphere.html"   target='_blank' >Earth's &nbsp ionosphere</A></li> 
+			<li> <A  href="ssilky.html"  target='_blank' >Space weather data</A></li>
+			<li> <A  href="moon.html" target='_blank'> Exploring the moon</A> </li>
+			<li> <A  href="mars.html" target='_blank'> Exploring the mars</A> </li>
+			<li> <A  href="Physics_Space.html" target='_blank'>Science &nbsp of &nbsp nature</A> </li>
+			<li> <A  href="biology.html" target='_blank'>Biology &nbsp and &nbsp &nbsp life</A> </li>
+			<li> <A  href="Foreign.html"   target='_blank'>Foreign &nbsp languages</A></li> 
+			<li> <A  href="relax.html"   target='_blank'>Music Videos Songs</A> </li>
+			<li> <A  href="saha.html"   target='_blank'>Video - photoalbum </A></li> 
+			<li> <A  href="prog.html"   target='_blank'> Qt C++, Python  </A></li>
+			<li> <A  href="asp_net.html"   target='_blank'> C# ASP.NET MVC5 </A></li>
+			<li> <A  href="html_css.html"   target='_blank'> HTML5, CSS, CSS3    </A></li>
+			<li> <A  href="javaScript.html"   target='_blank'> JavaScript, jQuery </A></li>
+			<li> <A  href="react.html"   target='_blank'> React, Redux, Node </A></li>
+			<li> <A  href="WebForm1.html"   target='_blank'> Guest Book</A></li>
+			<li> <A  href="http://google.com/" target='_blank'> Google.com </A></li>
+			<li> <A  href="http://yandex.ru/" target='_blank'> Yandex.ru </A></li>
+		</ul>
+	</div>
+
+   
+    <!-- Main body -->
+    <div class="background">
+      <div class="icon-menu">
+        <img src="first_box/menu-ham-icon.png">
+         Menu	      		
+      </div>
+    </div>
+     <!-- Main body -->
+
+
+
+ </div>  <!-- top end -->  
+
+<div id="bottom_div"> </div>
+
+	<div id="myclock"></div>
+	
+</div><!-- bottom end -->  
+
+ 
+</div><!-- container end -->  
+<br/><br/>
+
+
+<script src="first_box/jquery-latest.min.js"></script>
+<script src="first_box/menu.js"></script>
+<script language="javascript" type="text/javascript" src="first_box/jquery.thooClock.js"></script>  
+
+
+<script language="javascript">
+	var intVal, myclock;
+
+	$(window).resize(function(){
+		window.location.reload()
+	});
+
+	$(document).ready(function(){
+
+		var audioElement = new Audio("");
+
+		//clock plugin constructor
+		$('#myclock').thooClock({
+			size:$(document).height()/1.4,
+			sweepingMinutes:true,
+			sweepingSeconds:true,
+			onAlarm:function(){
+				 
+			},
+			showNumerals:true,
+			brandText:'',
+			brandText2:'',
+			onEverySecond:function(){
+				
+			},
+			// alarmTime:'15:30',
+			offAlarm:function(){
+			
+			}
+		});
+
+	});
+
+
+
+	$('#turnOffAlarm').click(function(){
+		 
+	});
+
+
+	$('#set').click(function(){
+		 
+	});
+
+	
+	function alarmBackground(y){
+		 
+	}
+</script>
+ <div class="time" >Time is the most valuable resource </div>
+ 
+</body>
+
+<!-- Mirrored from www.cosmic-rays.ru/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Nov 2023 08:35:34 GMT -->
+</html>
